@@ -1,0 +1,93 @@
+
+.productdetailview{
+    display: flex;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.detailleft{
+   width: 450px;
+    min-width: 320px;
+    height: 100vh;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 10px 0 0 10px;
+}
+.imgbox{
+    display: flex;
+margin: 50px auto;
+width: 250px;
+max-width: 300px;
+height: 300px;
+
+
+}
+
+.detailimage{
+ width: 100%;
+ height: 100%;
+ margin-left: 40px;
+ margin-top: 40px;
+
+    
+   
+}
+
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.btnbuy{
+    padding: 18px 8px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    width: 50%;
+    border: none;
+    float: left;
+    background: #ff9f00;
+    color: #fff
+}
+
+.btncart{
+    margin: 5px;
+    padding: 18px 8px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    width: 50%;
+    border: none;
+    float: left;
+   background-color: #fb641b;
+   color: #ffffff;
+}
+
+.detailright{
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
+    background-color: #fff;
+    margin-left: 60px;
+    
+
+}
+
+.detailtitle{
+    font-size: 18px;
+    font-weight: 400;
+}
+.crossicon{
+    position: absolute;
+    right: 0;
+    font-size: larger;
+    margin: 25px;
+}
+
+.cross{
+    color: #f32013;
+    font-size: 30px;
+}

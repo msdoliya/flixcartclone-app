@@ -1,0 +1,22 @@
+.navlist{
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+margin: 0 10%;
+}
+
+.navitem:hover{
+color: blue;
+cursor: pointer;
+}
+.navitem img{
+width: 5rem;
+}
+.navitem p{
+    padding: 0;
+    margin: 0;
+}
+.navitem p:hover{
+    color: blue;
+}

@@ -1,0 +1,145 @@
+.cartcontainer{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cartleft{
+    background-color: #fff;
+    width: 58rem;
+    margin: 20px 10px 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+
+.cartright{
+    box-shadow:  rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    background-color: #fff;
+    width: 28rem;
+    height: 23rem;
+    margin: 2rem;
+    margin: 20px 50px 30px 10px;
+    padding: 25px;
+
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalamount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.delivery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartbody{
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    background-color: #fff;
+    width: 58rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+}
+.removebtn:hover{
+  color: blue;
+  font-size: 21px !important;
+  transition: 0.1s ;
+}
+.emptycart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 40px;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+}
+
+.emptycart img{
+    width: 370px;
+    height: 280px;
+}
+
+.emptycart p{
+    font-size: 20px;
+    opacity: 70%;
+}
+.placeorder{
+    position: fixed;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    background-color: #fff;
+    width: 900px;
+    min-width: 20rem;
+    height: 60px;
+    margin: 20px 10px 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 1px;
+
+}
+.continueshoping{
+    text-decoration: none;
+    background: #fb641b;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 400;
+    padding: 12px 72px;
+}
+
+.orderbtn{
+    text-decoration: none;
+    background: #fb641b;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 72px;
+    height: 60px;
+    width: 400px;
+}
+
+.cartimage img{
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+.cartdetail{
+    margin-left: 30px;
+}
+
+.cartprice{
+    display: flex;
+    align-items: center;
+   ;
+
+}
+.headercart{
+    height: 60px;
+}

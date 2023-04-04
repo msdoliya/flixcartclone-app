@@ -1,0 +1,147 @@
+.header{
+    width: 100vw;
+    height: 70px;
+    background-color: #2874f0
+    ;
+}
+
+.listcontainer{
+ box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.75); 
+ position: absolute;
+ top: 80px; 
+ background-color: #ffffff; 
+ z-index: 12;
+ border-radius: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.listitem{
+    list-style: none;
+    margin: 14px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.link:hover{
+    color: #2874f0;
+}
+.navbar{
+  width: 74%; 
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+
+.username{
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+.logout{
+    background-color: rgb(240, 51, 51);
+    width: 90px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 20%;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    display: none;
+    
+    
+}
+
+.usernamediv{
+    position:relative;
+    top: 0;
+    z-index: 12;
+    height: 130px;
+    width: 40px;
+}
+
+.usernamediv:hover .logout{
+    display: flex;
+
+}
+
+.logo img{
+    width: 7rem;
+    
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 30rem;
+    height: 50px;
+    border-radius:10px;
+    outline: none;
+    margin: 0 20px;
+   
+    
+}
+.input input{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    width: 20rem;
+   
+
+}
+
+.search-icon{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+ 
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+
+}
+.list-item{
+    margin:  0 25px;
+    color: #fff;
+}
+
+.button button{
+    color: #2874f0;
+    font-weight: 900;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
