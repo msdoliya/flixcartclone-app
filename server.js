@@ -9,7 +9,7 @@ const url =  process.env.MONGODB_URI || "mongodb+srv://mahendra:doliya1998@ecomm
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-
+const __dirname = path.resolve()
 connection(url);
   
 
