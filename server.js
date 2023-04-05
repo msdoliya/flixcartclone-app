@@ -11,13 +11,10 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const __dirname = path.resolve()
 connection(url);
-  
 
-  app.use(express.static( path.join(__dirname, './client/build' )))
-  app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname,'./client/build/index.html'))
-  })
 
+
+app.use(express.static( path.join(__dirname, "./client/build") ))
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -36,3 +33,5 @@ app.use(function(req, res, next) {
 app.listen(PORT, () => console.log('server running sucess fully ') )
 defaultData();
 app.use('/', route)
+
+
