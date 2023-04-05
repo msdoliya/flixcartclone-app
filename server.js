@@ -3,8 +3,7 @@ import  connection  from './database/db.js';
 import defaultData from './default.js';
 import route from './routes/route.js';
 import bodyParser from 'body-parser';
-
-
+import * as path from 'path'
 
 const url =  process.env.MONGODB_URI || "mongodb+srv://mahendra:doliya1998@ecommerce.ckwfmja.mongodb.net/?retryWrites=true&w=majority";
 
@@ -13,9 +12,11 @@ const PORT = process.env.PORT || 8000;
 
 connection(url);
   
-if(process.env.NODE_ENV === 'production'){
-  app.use(express.static('client/build'))
-}
+
+  app.use(express.static( path.join(__dirname, './client/build' )))
+  app.get('*', function(req,res){
+    res.sendFile(path.join(__dirname,'./client/build/index.html'))
+  })
 
 
 app.use(function(req, res, next) {
