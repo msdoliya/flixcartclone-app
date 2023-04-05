@@ -1,7 +1,7 @@
 import * as actionTypes from '../redux-constants/product-constant';
 import axios from 'axios';
   
-const URL =""
+const URL = "http://localhost:8000" || ""
 export const getProducts = () => async (dispatch) => {
     try {
         const { data } = await axios.get(`${URL}/products`);

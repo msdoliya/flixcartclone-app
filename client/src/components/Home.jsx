@@ -8,8 +8,7 @@ import Slide from './slide/Slide'
 const Home = () => {
 
    const {products} = useSelector(state => state.getProducts)
-    
-  console.log(products);
+  
   
    const dispatch = useDispatch()
 

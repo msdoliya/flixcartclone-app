@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 
 
 
-const url =  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/flipkart";
+const url =  process.env.MONGODB_URI || "mongodb+srv://mahendra:doliya1998@ecommerce.ckwfmja.mongodb.net/?retryWrites=true&w=majority";
 
 const app = express();
 const PORT = process.env.PORT || 8000;

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = ''
+const URL =    'http://localhost:8000' || ""
 
 export const  authenticatesignup =  async (data)=>{
    try {
@@ -13,7 +13,7 @@ export const  authenticatesignup =  async (data)=>{
 
 export const authenticatelogin =  async (data)=>{
    try {
-    return await axios.post(`${url}/login`, data)
+    return await axios.post(`${URL}/login`, data)
     
    } catch (error) {
     console.log('error while loginapi', error)
