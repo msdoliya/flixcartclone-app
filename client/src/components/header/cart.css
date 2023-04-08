@@ -143,3 +143,28 @@
 .headercart{
     height: 60px;
 }
+
+@media screen and (max-width:500px) {
+  
+    .cartleft{
+        width: 24rem;
+        margin: 10px 5px;
+    }
+    .cartcontainer{
+        display: block;
+    }
+    .cartbody{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 24rem;
+    }
+    .cartright{
+        width: 21rem;
+        margin: -27px 7px 30px 6px;
+    }
+    .placeorder{
+width: 350px;
+margin: 20px;
+    }
+}

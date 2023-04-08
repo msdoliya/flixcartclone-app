@@ -11,6 +11,7 @@
 }
 
 
+
 .loginmodal{
     display: flex;
     min-width: 400px;
@@ -109,4 +110,21 @@
     color: red;
     font-size: 12px;
     margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .logn{
+        height: 100vh;
+       min-width: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        min-width: 280px
+
+    }
+    .loginbox{
+        z-index: 100 ;
+        
+    }
 }

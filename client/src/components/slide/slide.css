@@ -68,3 +68,14 @@ margin: 10px;
     margin: 6px;
     color: black;
 }
+
+@media screen and (max-width: 500px) {
+    .imagecontainer{
+        width: 100vw;
+        margin: 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }   
+}

@@ -7,7 +7,7 @@ const Navbar = () => {
       {navData.map(navdata=>(
         <div className='navitem'>
     <img src={navdata.url} alt="" />
-       <p>{navdata.text}</p>
+       <p className='navtitle'>{navdata.text}</p>
         </div>
       ))}
     </div>

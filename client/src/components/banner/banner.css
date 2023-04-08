@@ -64,7 +64,7 @@
     width: 2rem;
     height: 5rem;;
     right: 0;
-    z-index: 100;
+    z-index: 15;
     background-color: #fff; 
 }
 
@@ -78,7 +78,7 @@
     height: 5rem;
     right: 0px;
     margin:  0 ;
-    z-index: 100;
+    z-index: 15;
     background-color: #fff;
     margin-top: 5%;
     

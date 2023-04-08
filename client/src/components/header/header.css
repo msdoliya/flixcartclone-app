@@ -1,8 +1,10 @@
 .header{
     width: 100vw;
     height: 70px;
-    background-color: #2874f0
-    ;
+    background-color: #2874f0;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
 }
 
 .listcontainer{
@@ -31,8 +33,7 @@
     color: #2874f0;
 }
 .navbar{
-  width: 74%; 
-  margin: auto;
+  width: 80vw; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +41,18 @@
   
 }
 
+.leftnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+.rightnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
 .username{
     color: white;
     cursor: pointer;
@@ -80,7 +93,7 @@
 }
 
 .logo img{
-    width: 7rem;
+    width: 9rem;
     
 }
 .input{
@@ -88,19 +101,19 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    width: 30rem;
+    width: 40rem;
     height: 50px;
     border-radius:10px;
     outline: none;
-    margin: 0 20px;
+    margin-left: 34px;
    
     
 }
 .input input{
     outline: none;
     border: none;
-    font-size: 20px;
-    width: 20rem;
+    font-size: 25px;
+    width: 32rem;
    
 
 }
@@ -135,13 +148,147 @@
     border: 1px solid #dbdbdb;
 }
 
+.rightnavmobile{
+    display: flex;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    z-index: 20;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+
+    
+}
+
+.menuicon{
+    display: none;
+}
+
+
 .cart{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .cart-icon{
     font-size: 30px;
     margin-right: 10px;
+}
+@media screen and (max-width: 1050px) {
+    .rightnav{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 30px;
+        z-index: 20;
+    }
+    .mmenuheader{
+        width: 100%;
+        height: 60px;
+        background-color: #2874f0;
+    }
+    .navbar{
+        width: 95%;
+    }
+    .logo img{
+        width: 85px;
+        height: 29px;
+        margin: 15px;
+    }
+    .input{
+        width:59vw
+    }
+   .input input{
+    width: 70%;
+    font-size: 14px;
+    margin-left: 10px;
+
+   }
+   
+.list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin:10px ;
+    flex-direction: column;
+    
+    
+
+}
+.list li{
+    margin-top: 15px;
+    color: black;
+}
+.button{
+    margin-top: 30px;
+    color:black;
+    border: none;
+}
+.button button{
+    color:black;
+    background-color: none;
+    border: none;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    .rightnav{
+        display: none;
+    }
+    .navbar{
+        width: 95%;
+    }
+    .logo img{
+        width: 70px;
+        height: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .input{
+        width:53vw;
+        margin-left: 0;
+    }
+   .input input{
+    width: 70%;
+    font-size: 14px;
+    margin-left: 10px;
+
+   }
+   
+.list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin:10px ;
+    flex-direction: column;
+    
+    
+
+}
+.list li{
+    margin-top: 15px;
+    color: black;
+}
+.button{
+    margin-top: 30px;
+    color:black;
+    border: none;
+}
+.button button{
+    color:black;
+    background-color: none;
+    border: none;
+}
+
 }

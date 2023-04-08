@@ -7,8 +7,10 @@ import signupmodal from "../../modal/signupschema.js"
      const signupdata = req.body
       const newuser = new signupmodal(signupdata)
        await newuser.save();
+       res.status(200).json('success')
  } catch (error) {
     console.log('error while handling signupapi', error)
+    res.status(500).json({message:error.message})
  }
 
 }

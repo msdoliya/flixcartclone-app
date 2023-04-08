@@ -1,6 +1,7 @@
 .navlist{
 display: flex;
-
+width: 100vw;
+overflow: hidden;
 align-items: center;
 justify-content: space-between;
 margin: 0 10%;
@@ -11,7 +12,7 @@ color: blue;
 cursor: pointer;
 }
 .navitem img{
-width: 5rem;
+width: 6rem;
 }
 .navitem p{
     padding: 0;
@@ -19,4 +20,17 @@ width: 5rem;
 }
 .navitem p:hover{
     color: blue;
+}
+
+@media screen and (max-width: 500px) {
+    .navitem img{
+        width: 4rem;
+    }
+    .navlist{
+        margin: 10px;
+    }
+    .navtitle{
+        font-size: 13px;
+        margin: 0 10px;
+    }
 }

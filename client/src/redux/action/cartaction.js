@@ -4,11 +4,11 @@
 import * as actionTypes from '../redux-constants/cart-constant';
 import axios from 'axios';
 
-const URL ="http://localhost:8000" || ""
+const URL ='http://localhost:8000' || ""
 
 export const addToCart = (id, quantity) => async (dispatch) => {
     try { 
-        const { data } = await axios.get(`${URL}/${id}`);
+        const { data } = await axios.get(`${URL}/product/${id}`);
 
         dispatch({ type: actionTypes.ADD_TO_CART, payload: { ...data, quantity } });
 

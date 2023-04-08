@@ -70,7 +70,7 @@ const additemtocart =()=>{
              <p> 1000 rating and 355 review</p>
             
             </div >
-            <p style={{maxWidth:'30rem'}}> {product.description} </p>
+            <p className='description'> {product.description} </p>
             <Link  to='/'  className='crossicon'><RxCross1 className='cross' /></Link>
           </div>
 

@@ -37,17 +37,22 @@ const Logindialog = ({setopen, open}) => {
 
     const loginonchangephandle =(e)=>{
       setlogincredential({...logincredential,[e.target.name]: e.target.value})
-      console.log(logincredential)
+      
+   
     }
 
     const signup = async ()=>{
-   await   authenticatesignup(signupcredential)
-    }
+    const responce = await authenticatesignup(signupcredential)
+    console.log(responce.status)
+   if(responce.status === 200){
+    alert('your account alredy created plese enter emailand password for login')
+    setloginsignup(true)
+   }
+  
+  }
 
     const login = async ()=>{
          const response =  await   authenticatelogin(logincredential)
-        console.log(response)
-         
          if(response.status === 200){
             setopen(false)
             setname(response.data.firstname)
@@ -111,7 +116,7 @@ const Logindialog = ({setopen, open}) => {
       <hr className='hrline' />
       
       
-       <button onClick={signup} className='loginbtn'> signup</button>
+       <button style={{cursor:'pointer'}} onClick={signup} className='loginbtn'> signup</button>
        <p onClick={()=>{setloginsignup(true)}} className='newacc'> Already have an account?</p>
        </>
     }
