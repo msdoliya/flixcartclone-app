@@ -14,7 +14,6 @@ connection(url);
 
 
 
-app.use(express.static( path.join(__dirname, "./client/build") ))
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -25,9 +24,6 @@ app.use(function(req, res, next) {
     next();
     }); 
 
-app.use('*', function(req, res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
-}) ;
 
     app.use(bodyParser.json({extended:true}));
     app.use(bodyParser.urlencoded({extended:true}));
